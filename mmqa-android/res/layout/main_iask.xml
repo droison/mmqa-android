@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/card_titile" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-11.0dip"
+        android:background="@drawable/user_card_bg_bitmap"
+        android:orientation="vertical"
+        android:paddingBottom="6.0dip"
+        android:paddingTop="6.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="1.0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="@dimen/portrait_size"
+                android:layout_height="@dimen/portrait_size"
+                android:layout_marginLeft="1.0dip"
+                android:src="@drawable/ic_launcher" />
+
+            <!--
+                 <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13.0dip"
+                android:layout_marginTop="5.0dip" >
+
+                
+                     <ImageView
+                    android:id="@+id/pic_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pic_bg" />
+               
+
+
+                <com.media.Util.CircleImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/pic"
+                    android:layout_width="116px"
+                    android:layout_height="116px"
+                    android:layout_marginLeft="1.0dip"
+                      />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.0dip"
+                    android:src="@drawable/voip_avatar_bg" />
+
+
+            </FrameLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="2.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/main_iask_cnName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:shadowColor="@android:color/black"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:textColor="@android:color/white"
+                        android:textIsSelectable="false"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/main_iask_sex"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14.0dip"
+                        android:focusable="false"
+                        android:shadowColor="@android:color/black"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:singleLine="true"
+                        android:text="@string/iask_sex"
+                        android:textColor="#ffe6e6e6"
+                        android:textSize="14.0sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/main_iask_role"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14.0dip"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:shadowColor="@android:color/black"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:textColor="#0C26EE"
+                        android:textIsSelectable="false"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="14.0dip"
+                    android:background="@drawable/userinfo_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_exp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7.0dip"
+                            android:focusable="false"
+                            android:shadowColor="@android:color/black"
+                            android:shadowDy="1.0"
+                            android:shadowRadius="1.0"
+                            android:text="@string/iask_status"
+                            android:textColor="#ffe6e6e6"
+                            android:textSize="13.0sp" />
+
+                        <TextView
+                            android:id="@+id/state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:focusable="false"
+                            android:text="@string/iask_status_online"
+                            android:textColor="#ffe6e6e6"
+                            android:textSize="13.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="54.0dip"
+                android:background="#fff8f8f8" >
+
+                <ListView
+                    android:id="@+id/ask_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@drawable/list_divider"
+                    android:drawingCacheQuality="low"
+                    android:fastScrollEnabled="true"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:listSelector="@drawable/list_selector1"
+                    android:persistentDrawingCache="scrolling"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/answer_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@drawable/list_divider"
+                    android:drawingCacheQuality="low"
+                    android:fastScrollEnabled="true"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:listSelector="@drawable/list_selector1"
+                    android:persistentDrawingCache="scrolling"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="54.0dip" >
+
+            <LinearLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/ask_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/sharp_selector"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8.0dip"
+                        android:duplicateParentState="true"
+                        android:gravity="center"
+                        android:shadowColor="#ffffffff"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="0.2"
+                        android:text="@string/iask_ask"
+                        android:textColor="@drawable/iknow_tab_color"
+                        android:textSize="19.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/answer_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/sharp_selector"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:id="@+id/text_answer_btn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8.0dip"
+                        android:duplicateParentState="true"
+                        android:gravity="center"
+                        android:shadowColor="#ffffffff"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="0.2"
+                        android:text="@string/iask_answer"
+                        android:textColor="@drawable/iknow_tab_color"
+                        android:textSize="19.0sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@id/text_answer_btn"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="8.0dip"
+                        android:src="@drawable/iknow_tab_line" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

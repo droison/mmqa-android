@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.media.Activity"
+    android:versionCode="24"
+    android:versionName="10.4" >
+
+    <uses-sdk
+        android:maxSdkVersion="16"
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+
+    <application
+        android:largeHeap="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <!-- 渠道商编号，其中name请不要改，将value修改为渠道商编号。渠道名称请到mtj.baidu.com的渠道管理中修改 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Baidu Market" />
+        <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="7c8cd2105f" />
+
+        <activity
+            android:name="com.media.Activity.MainTabActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" />
+        <activity android:name="com.media.Activity.AActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.media.Activity.BActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.media.Activity.CActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.media.Activity.NewQuestionActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.media.Activity.VideoActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.media.Activity.UploadActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.media.Activity.SetActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.media.Activity.QuestionViewActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.media.Activity.ImageActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.media.Activity.MyViewPagerActivity"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.media.Activity.ImageVoiceSet" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name="com.media.Activity.VideoViewFActivity"
+            android:screenOrientation="reverseLandscape" />
+        <activity
+            android:name="com.media.Activity.VideoViewBActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.media.Activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity android:name="com.media.Activity.RegisterActivity" 
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.media.Activity.StartActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.media.Activity.VideoPlay.VideoViewBActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        
+        <activity
+            android:name="com.media.Activity.VideoPlay.VideoViewFActivity"
+            android:screenOrientation="reverseLandscape">
+        </activity>
+        <activity
+            android:name="com.media.Activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.media.Activity.SettingFeedbackActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service android:name="com.media.service.UploadService" />
+<service android:name="com.media.service.QiNiuUploadService" />
+        
+        <activity
+            android:name="com.media.Activity.NativeCameraActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_native_camera" >
+        </activity>
+    </application>
+
+    <uses-feature android:name="android.hardware.camera" />
+
+</manifest>

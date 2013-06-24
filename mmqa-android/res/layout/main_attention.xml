@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_grey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/newQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/write_left_selector" />
+
+        <Button
+            android:id="@+id/GZHT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/YJJ"
+            android:background="@drawable/white_btn_selector"
+            android:text="@string/GZHT"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/YJJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/GZHT"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/white_btn_selector"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size"
+            android:text="@string/YJJ" />
+
+        <Button
+            android:id="@+id/WJJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/YJJ"
+            android:background="@drawable/white_btn_selector"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size"
+            android:text="@string/WJJ" />
+
+<!--         <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/YJJ"
+            android:background="@drawable/refresh_btn_selector"
+            android:onClick="refreshHandler" /> -->
+   
+    </RelativeLayout>
+
+    <com.media.component.xlistview.XListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10.0dip"
+   		android:layout_marginRight="10.0dip"
+        android:dividerHeight="15dip" 
+       	android:divider="#0000" />
+
+</LinearLayout>

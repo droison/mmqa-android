@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/answerCnName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是作者"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/answerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/answerCnName"
+            android:layout_marginLeft="5dp"
+            android:text="这是时间"
+            android:textColor="#333333" />
+    </RelativeLayout>
+
+    <FrameLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp" >
+
+    <ImageView
+        android:id="@+id/answerThumb"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/prepare_video" />
+
+    <ImageView
+        android:id="@+id/startbtn"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/start_btn" />
+
+   
+   
+
+        <TextView
+            android:id="@+id/answerDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textIsSelectable="false"
+            android:text="123123"
+            android:layout_gravity="bottom|right"
+            android:textColor="@android:color/secondary_text_light" />
+
+
+</FrameLayout>
+
+</LinearLayout>
+
+
+
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="1.0dip"
+    android:layout_marginRight="1.0dip"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:background="@drawable/dotted_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/qvAnswerId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <FrameLayout 
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            >
+            <ImageView
+	            android:id="@+id/answerThumb"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_margin="5dip"
+	            android:src="@drawable/prepare_video" />
+            <ImageView 
+	            android:id="@+id/startbtn"
+	            android:layout_width="20dip"
+	            android:layout_height="20dip"
+	            android:layout_gravity="center"
+				android:layout_centerInParent="true"
+	            android:background="@drawable/start_btn"
+            />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/answerCnName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textIsSelectable="false"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/douhao"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/answerRole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textIsSelectable="false"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answerTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:src="@drawable/duration_star" />
+
+                <TextView
+                    android:id="@+id/answerDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_dark"
+                    android:textIsSelectable="false"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/qvAnswerVideoId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout> -->

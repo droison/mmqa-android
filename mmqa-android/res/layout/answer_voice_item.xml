@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/answer_item_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是作者"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/answer_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="这是时间"
+            android:textColor="#333333" />
+    </RelativeLayout>
+
+   	<FrameLayout
+        android:id="@+id/voice_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/chatfrom_bg_voice_focused"
+        android:paddingTop="13dp" >
+
+        <include layout="@layout/audio_player_button" />
+    </FrameLayout>
+    
+  
+
+</LinearLayout>

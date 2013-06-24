@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/answer_item_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是作者"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/answer_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/answer_item_author"
+            android:layout_marginLeft="5dp"
+            android:text="这是时间"
+            android:textColor="#333333" />
+    </RelativeLayout>
+
+ <FrameLayout
+     	android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical"
+ >
+
+        <ImageView
+            android:id="@+id/imagevoice"
+        	android:layout_width="fill_parent"
+      		android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test2" />
+
+        <LinearLayout
+            android:id="@+id/imagevoice_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/voice_start_bg" >
+
+            <TextView
+                android:id="@+id/voiceduration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="5&apos;"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+
+            <ImageButton
+                android:id="@+id/voice_btn_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="center"
+                android:src="@drawable/feed_main_player_play" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

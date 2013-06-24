@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/answer_item_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是作者"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/answer_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/answer_item_author"
+            android:layout_marginLeft="5dp"
+            android:text="这是时间"
+            android:textColor="#333333" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/answer_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#000000"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:background="@drawable/chatfrom_bg_voice"
+        android:clickable="true"/>
+
+</LinearLayout>

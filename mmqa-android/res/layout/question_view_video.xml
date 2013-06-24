@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <ImageView
+        android:id="@+id/questionThumb"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/prepare_video" />
+
+    <ImageView
+        android:id="@+id/startbtn"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/start_btn" />
+
+   
+   
+
+        <TextView
+            android:id="@+id/qvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textIsSelectable="false"
+            android:text="123123"
+            android:layout_gravity="bottom|right"
+            android:textColor="@android:color/secondary_text_light" />
+
+
+</FrameLayout>

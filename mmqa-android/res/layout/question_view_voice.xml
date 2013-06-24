@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:id="@+id/voice_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatfrom_bg_voice_focused"
+        android:paddingTop="13dp" >
+
+        <include layout="@layout/audio_player_button" />
+    </FrameLayout>
+
+</LinearLayout>

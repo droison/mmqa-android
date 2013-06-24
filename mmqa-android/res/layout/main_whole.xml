@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bar_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="32.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_homeactivity_edittext"
+            android:gravity="center_vertical"
+            android:hint="@string/ask_search_hint"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textColor="@color/grey"
+            android:textSize="14.0sp" />
+
+        <Button
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:background="@drawable/search_button_selector"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <com.media.component.xlistview.XListView
+        android:id="@+id/main_whole_ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginLeft="2.0dip"
+        android:background="@drawable/regist_board_bg"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/list_divider"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@drawable/recommend_list_selector"
+        android:paddingBottom="0.0dip"
+        android:paddingTop="0.0dip"
+        android:scrollbars="none" />
+
+</LinearLayout>

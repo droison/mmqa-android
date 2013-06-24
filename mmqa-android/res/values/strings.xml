@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Vitamio播放器 -->
+    <string name="vitamio_name">MMQA</string>
+    <string name="vitamio_init_decoders">视频加载中…</string>
+    <string name="vitamio_videoview_error_title">Cannot play video</string>
+    <string name="vitamio_videoview_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to this device.</string>
+    <string name="vitamio_videoview_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="vitamio_videoview_error_button">OK</string>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    <string name="liveinfo_descriptionbar_text">简介</string>
+    <string name="app_name">问道</string>
+    <string name="main_attention">我的关注</string>
+    <string name="main_whole">所有问题</string>
+    <string name="main_iask">我的问答</string>
+    <string name="question_sign">Q:</string>
+    <string name="two_button_left">返回</string>
+    <string name="answer_button_text">请猛击此处回答</string>
+    <string name="next">下一步</string>
+    <string name="refresh">刷新</string>
+    <string name="logout_account">退出此帐号</string>
+    <string name="login">登 陆</string>
+    <string name="catch_video">添加多媒体</string>
+    <string name="remember">记住密码</string>
+    <string name="tags_tip">您必须添加标签，但最多只能有3个</string>
+    <string name="addTags">添加标签</string>
+    <string name="ask_search_hint">请输入要查询的问题</string>
+    <string name="prompt_username">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in"><b>登录</b></string>
+    <string name="action_register">点此初次登陆</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="menu_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">正在登录&#8230;</string>
+    <string name="error_invalid_password">密码太短了，请重新输入</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_username_required">请输入用户名</string>
+    <string name="error_password_required">请输入密码</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="update_url">http://218.249.255.29:81/checkVersion</string>
+    <string name="douhao"> , </string>
+    <string name="copyright">©Copyright bupticet and others 2012.</string>
+    <string name="All_rights_reserved">All rights reserved</string>
+    <string name="GZHT">关注话题</string>
+    <string name="YJJ">已解决</string>
+    <string name="WJJ">未解决</string>
+    <string name="main_item_question_ask">发布人：</string>
+    <string name="main_item_question_lastasnwer">最后回答:</string>
+    <string name="iask_sex">男</string>
+    <string name="iask_status"> 状态：</string>
+    <string name="iask_status_online">当前在线</string>
+    <string name="iask_ask">提问</string>
+    <string name="iask_answer">回答</string>
+    <string name="new_video">视频</string>
+    <string name="new_image">图片</string>
+    <string name="new_imageVoice">语音图片</string>
+    <string name="new_voice">语音</string>
+    <string name="notice_upload_percentage">0%</string>
+    <string name="feedback_advise">请在此处填写您的意见</string>
+    <string name="feedback_email">您的邮箱，以方便联系</string>
+    <string name="feedback">反馈</string>
+    <string name="question_view_space">  </string>
+    <string name="upload_data">数据</string>
+    <string name="upload_file">上传文件到服务器端</string>
+    <string name="video_start">开始录制</string>
+    <string name="video_change">切换</string>
+    <string name="set_item_1">1</string>
+    <string name="native_camera_high">高品质（清晰）</string>
+    <string name="native_camera_low">低品质（省流量）</string>
+    <string name="max_lines">3</string>
+    
+
+    <!-- 自定义listview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载....</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="httpstatus_error">服务器有误</string>
+    <string name="message_null">服务器没有此问题信息</string>
+    <string name="title_activity_native_camera">NativeCameraActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

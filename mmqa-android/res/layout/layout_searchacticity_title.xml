@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/bar_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="5.0dip"
+    android:paddingRight="5.0dip" >
+
+    <EditText
+        android:id="@+id/search_key"
+        android:layout_width="0.0dip"
+        android:layout_height="32.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_homeactivity_edittext"
+        android:gravity="center_vertical"
+        android:hint="@string/ask_search_hint"
+        android:paddingLeft="10dip"
+        android:singleLine="true"
+        android:textColor="@color/grey"
+        android:textSize="14.0sp" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="35.0dip"
+        android:layout_height="35.0dip"
+        android:background="@drawable/search_button_selector" />
+
+</LinearLayout>

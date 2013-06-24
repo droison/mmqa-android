@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <include layout="@layout/title_two_button" />
+
+    <RelativeLayout
+        android:id="@+id/videoContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40.0dip" >
+
+        <SurfaceView
+            android:id="@+id/videoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hudContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_bg"
+        android:gravity="bottom|center" >
+
+        <Button
+            android:id="@+id/ctrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ems="6"
+            android:text="@string/video_start" />
+
+        <Button
+            android:id="@+id/switchVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ems="6"
+            android:text="@string/video_change" />
+    </LinearLayout>
+
+    <!--
+     	<LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:layout_gravity="center_horizontal"
+	  	android:orientation="horizontal">  
+	</LinearLayout>
+    -->
+
+</RelativeLayout>

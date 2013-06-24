@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+       
+     <ImageView
+        android:id="@+id/top_bar"
+        android:layout_width="45.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/prev_top_pseudobar" />
+
+    <RelativeLayout
+        android:id="@+id/videoContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <io.vov.vitamio.widget.CenterLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <io.vov.vitamio.widget.VideoView
+            android:id="@+id/surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </io.vov.vitamio.widget.CenterLayout>
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hudContainer"
+        android:layout_width="150dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/login_bg"
+        android:gravity="left|center" >
+
+        <Button
+            android:id="@+id/buttonClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:background="@drawable/but_red_close_b"
+            android:text="" />
+    </LinearLayout>
+    
+    
+    
+
+</RelativeLayout>

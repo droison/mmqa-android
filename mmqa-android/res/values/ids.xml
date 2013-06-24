@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item name="title" type="id">false</item>
+    <item name="main_radio" type="id">false</item>
+    <item name="radio_button0" type="id">false</item>
+    <item name="radio_button1" type="id">false</item>
+    <item name="radio_button2" type="id">false</item>
+    <item name="left_button" type="id">false</item>
+    <item name="right_button" type="id">false</item>
+    <item name="set" type="id">false</item>
+    <item name="card_title" type="id">false</item>
+    <item name="iask_refresh" type="id">false</item>
+    <item name="questionId" type="id">false</item>
+    <item name="set_item_icon" type="id">false</item>
+    <item name="set_item_title" type="id">false</item>
+    <item name="setList" type="id">false</item>
+    <item name="login_btn" type="id">false</item>
+    <item name="logout_btn" type="id">false</item>
+    <item name="tags_tip" type="id">false</item>
+    <item name="addTags" type="id">false</item>
+    <item name="main_whole_item_image" type="id">false</item>
+    <item name="main_whole_item_count" type="id">false</item>
+    <item name="main_attention_item_count" type="id">false</item>
+</resources>

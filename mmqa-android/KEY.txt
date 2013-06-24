@@ -1,0 +1,2 @@
+pass(ALL):buptnu
+name:bupticet

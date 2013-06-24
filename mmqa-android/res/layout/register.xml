@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_two_button" />
+
+    <LinearLayout
+        android:id="@+id/register_mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="0.0dip"
+            android:layout_marginRight="0.0dip"
+            android:layout_marginTop="0.0dip"
+            android:layout_weight="1.0"
+            android:padding="20dp" >
+
+            <EditText
+                android:id="@+id/register_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_register_username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_username"
+                android:layout_marginTop="10dp"
+                android:hint="@string/prompt_register_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/register_name"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_password"
+                android:layout_marginTop="10dp"
+                android:hint="@string/prompt_register_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <CheckBox
+                android:id="@+id/register_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_name"
+                android:layout_marginTop="10dp"
+                android:text="@string/register_checkBox" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.0dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                android:layout_height="46.0dip"
+                android:layout_marginLeft="0.0dip"
+                android:layout_marginRight="0.0dip"
+                android:background="@drawable/oper_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="16.0dip" >
+
+                <LinearLayout
+                    android:id="@+id/register_addTags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:background="@drawable/submit_focus_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="7.0dip" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_tags_selector"
+                        android:duplicateParentState="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:duplicateParentState="true"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/register_addTags"
+                        android:textColor="@drawable/camera_text_color"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_tagsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0.0dip"
+        android:layout_marginRight="0.0dip"
+        android:layout_marginTop="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46.0dip"
+            android:layout_marginLeft="0.0dip"
+            android:layout_marginRight="0.0dip"
+            android:background="@drawable/oper_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="16.0dip" >
+
+            <LinearLayout
+                android:id="@+id/register_addTags1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:background="@drawable/submit_focus_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="7.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_tags_selector"
+                    android:duplicateParentState="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:duplicateParentState="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/register_addTags"
+                    android:textColor="@drawable/camera_text_color"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/register_tagsList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/register_tagsList0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/register_tag00"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag01"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag02"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag03"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag04"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/register_tagsList1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/register_tag10"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag11"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag12"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag13"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag14"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/register_tagsList2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/register_tag20"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag21"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag22"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag23"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag24"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/register_tagsList3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/register_tag30"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag31"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag32"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag33"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag34"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/register_tagsList4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/register_tag40"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag41"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag42"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag43"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag44"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/register_tagsList5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/register_tag50"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag51"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag52"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag53"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag54"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/register_tagsList6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/register_tag60"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag61"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag62"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag63"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag64"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/register_tagsList7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/register_tag70"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag71"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag72"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag73"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag74"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/register_tagsList8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/register_tag80"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag81"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag82"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag83"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag84"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/register_tagsList9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/register_tag90"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag91"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag92"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag93"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/register_tag94"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/white_btn_selector"
+                        android:textColor="@drawable/btn_text_color"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

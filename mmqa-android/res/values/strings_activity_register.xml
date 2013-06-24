@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="prompt_register_username">用户名(学生:学号，教师:字母)</string>
+    <string name="prompt_register_password">密码(请大于4位)</string>
+    <string name="prompt_register_name">真实姓名</string>
+    <string name="register_checkBox">您是教师？</string>
+    <string name="register_addTags">添加关注标签</string>
+
+</resources>

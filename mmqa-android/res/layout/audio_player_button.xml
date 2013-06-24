@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/audio_length"
+        android:layout_width="30.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14.0dip"
+        android:gravity="right"
+        android:lineSpacingExtra="2.0dip"
+        android:textColor="#000000"
+        android:textSize="14.0sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="48.0dip"
+        android:src="@drawable/feed_main_player_play" />
+
+    <ProgressBar
+        android:id="@+id/audio_play_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="16.0dip"
+        android:layout_height="16.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="48.0dip"
+        android:visibility="gone" />
+
+</merge>

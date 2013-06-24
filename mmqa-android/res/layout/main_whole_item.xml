@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/list_item_height">
+
+    <TextView
+        android:id="@+id/main_whole_item_questionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/main_whole_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@android:color/transparent"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/main_whole_item_count"
+        android:singleLine="true"
+        android:textColor="@drawable/recommend_text_color"
+        android:layout_alignParentLeft="true"
+        android:textIsSelectable="false"
+        android:textSize="18.0sp" />
+    <TextView 
+        android:id="@id/main_whole_item_count"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+         android:textColor="@drawable/recommend_text_color"
+         android:layout_marginRight="5.0dip"
+        android:textSize="18.0sp"
+        android:textIsSelectable="false"
+        android:layout_toLeftOf="@id/main_whole_item_image"/>
+    <TextView 
+        android:layout_height="41dp"
+        android:layout_width="41dp"
+        android:layout_centerVertical="true"
+         android:textColor="#ffffff"/>
+    
+    <ImageView
+        android:id="@id/main_whole_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15.0dip"
+        android:background="@null"
+        android:src="@drawable/arrow_selector" />
+
+</RelativeLayout>
